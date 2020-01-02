@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Comp1 {
+    text-align: center;
+    font-size: large;
+    width: 50%;
+    margin: 1rem;
+    padding: .5rem;
+    border: 2.5px dotted lightgray;
+    border-radius: 10px;
+ 
+}
+
+.Comp2 {
+   text-align: center;
+   font-size: large;
+   width: 38%;
+   margin: 1rem;
+   padding: .5rem;
+   border: 2.5px dotted lightgray;
+   border-radius: 10px;
+}
