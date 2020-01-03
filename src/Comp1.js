@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 
@@ -21,7 +22,7 @@ class Comp1 extends Component {
           type="search" value={this.state.searchValue}
           onChange={this.searchChange.bind(this)}
         />
-
+        <p><Link to="/about">Go to the About page</Link></p>
       </div>
     );
   }

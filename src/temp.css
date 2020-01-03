@@ -26,3 +26,9 @@
    border: 3.5px dotted lightgray;
    border-radius: 10px;
 }
+
+div.About{
+    width: 40%;
+    margin: 1rem;
+    padding: 3px;
+}
