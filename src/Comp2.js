@@ -8,14 +8,14 @@ class Comp2 extends Component {
     
         <p>The value is { this.props.value }</p>
         <p>{ this.props.title }</p>
-        <p>{ this.props.explanation }</p>
+        <p>{ this.props.body }</p>
       </div>
     );
   }
   static propTypes = {
     value: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
-    explanation: PropTypes.string.isRequired,
+    body: PropTypes.string.isRequired,
   }
 }
 

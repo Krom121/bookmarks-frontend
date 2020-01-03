@@ -7,15 +7,15 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: 17, title: "", explanation: "",
+      value: 17, title: "", body: "",
     }
   }
   componentDidMount(){
-    fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
     .then(response => response.json())
     .then(
       data =>
-      this.setState({ title: data.title, explanation: data.explanation })
+      this.setState({ title: data.title, body: data.body })
     )
     .catch((error) => {console.log('Error fetching and parsing data', error)})
   }
@@ -29,7 +29,8 @@ class App extends Component {
       <Comp1 text="Click Me" inc_value={this.inc_value.bind(this)}/>
       <Comp2 
         value={this.state.value}
-        explanation={this.state.explanation}
+        title={this.state.title}
+        body={this.state.body}
       />
     </div>
     );
