@@ -7,8 +7,8 @@ class Comp2 extends Component {
       <div className="Comp2">
     
         <p>The value is { this.props.value }</p>
-        <p>The value is { this.props.title }</p>
-        <p>The value is { this.props.explanation }</p>
+        <p>{ this.props.title }</p>
+        <p>{ this.props.explanation }</p>
       </div>
     );
   }
